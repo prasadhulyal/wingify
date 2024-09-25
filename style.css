@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* section {
+    height: 82vh;
+    width: 100%;
+    position: relative;
+} */
+section {
+    height: 96vh;
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+section .content {
+    position: relative;
+    z-index: 1;
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100vh;
+    height: 100vh;
+    border-radius: 50%;
+    transform-origin: bottom;
+    transform: translate(-50%) scale(10);
+    background: #5329C7;
+} */
+
+section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+    height: 100vh;
+    border-radius: 50%;
+    transform-origin: bottom;
+    transform: translate(-50%, -9%) scale(7);
+    background: #5329C7;
+}
+
+/* Left Section Styles */
+.content .left-section {
+    color: #fff;
+}
+
+.content .left-section h2 {
+    font-weight: 700;
+    font-size: 2.125rem;
+    max-width: 500px;
+}
+
+.bullet-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bullet-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.bullet-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.head-text {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-top: 30px;
+}
+
+.bullet-list .list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list .subtext {
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+/* Form Container Styles */
+.form-container {
+    background-color: #F7F7F7;
+    padding: 50px 40px 40px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
+}
+
+input::placeholder {
+    font-weight: 500;
+    font-size: 0.938rem;
+}
+
+.demo-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.demo-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+.demo-form input,
+.demo-form select,
+.demo-form textarea {
+    padding: 10px;
+    border: 1px solid #828282;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    height: 42px;
+}
+
+/* Radio Group Styles */
+.radio-group input[type="radio"] {
+    width: 22px;
+}
+
+.radio-group label {
+    margin: 0;
+}
+
+.rd {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.date-selector {
+    display: flex;
+    gap: 10px;
+}
+
+#product {
+    height: 84px;
+}
+
+.form-group label {
+    font-size: 0.938rem;
+    font-weight: 500;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Button Styles */
+.demo-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5329C7;
+    color: white;
+    border: none;
+    border-radius: 56px;
+    cursor: pointer;
+    font-size: 1.125rem;
+    height: 56px;
+    font-weight: 700;
+}
+
+.demo-form button:hover {
+    background-color: #2E3AB3;
+}
+
+/* Error Message Styles */
+.error {
+    color: #EB5757;
+    font-size: 13px;
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Custom Select Dropdown Styling */
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    height: 42px;
+    position: relative;
+    padding-right: 30px;
+}
+
+/* Select Wrapper */
+.select-wrapper {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.error-border {
+    border: 2px solid #EB5757 !important;
+}
+
+/* Custom Dropdown Arrow */
+.select-wrapper::after {
+    content: '▼';
+    position: absolute;
+    top: 41%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 14px;
+    height: 11px;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.bottom-section {
+    padding: 10% 10% 2% 10%;
+}
+
+.bottom-section h2 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #5776CC;
+}
+
+.b-t-d-container .card-container {
+    display: flex;
+    margin-top: 50px;
+    gap: 5%;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+.card {
+    position: relative;
+    width: 48%;
+    height: 343px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to bottom, #5329C7B2, #5329C7B2);
+    transition: height 0.3s ease;
+    box-shadow: 0 -20px 15px rgba(83, 41, 199, 0.7);
+}
+
+.card:hover .overlay {
+    height: 100%;
+}
+
+.text {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: bottom 0.3s ease;
+}
+
+.text h3 {
+    font-weight: 800;
+    font-size: 1.5rem;
+
+}
+
+.text p {
+    font-weight: 500;
+    font-size: 1.125rem;
+    padding-top: 20px;
+    line-height: 26px;
+}
+
+.desktop-hide {
+    display: none;
+}
+
+.card:hover .text {
+    bottom: 15%;
+    transform: translateY(15%);
+}
+
+@media screen and (max-width:992px) {
+    section::before {
+        bottom: -91px;
+        top: 0;
+        transform: translate(50%, -16%) scale(5);
+        width: 50%;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .b-t-d-container .card-container {
+        margin-top: 0;
+    }
+
+    .desktop-hide {
+        display: block;
+    }
+
+    /* input::placeholder,
+    textarea::placeholder {
+        font-size: 0.625rem;
+    } */
+
+    .b-t-d-container {
+        margin-top: 40px;
+    }
+    .select-wrapper::after{
+        width: 8.63px;
+        height: 6.78px;
+    }
+    .demo-form button {
+        font-size: 1rem;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    section {
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    option[selected] {
+        font-size: 0.625rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bottom-section {
+        padding: 20px;
+    }
+
+    .left-section {
+        padding: 40px;
+    }
+
+    .card img {
+        object-fit: fill;
+    }
+
+    .card {
+        width: 85%;
+        height: 220px;
+        margin: auto;
+        margin-bottom: 50px;
+
+    }
+
+    .moble-hide {
+        display: none;
+    }
+
+    .text h3 {
+        font-size: 0.75rem;
+    }
+
+    .text p {
+        font-size: 0.625rem;
+        padding-top: 5px;
+        line-height: 14px;
+    }
+
+    .bottom-section h2 {
+        font-size: 1.579rem;
+        padding: 0 0 0 7%;
+    }
+
+    .content .left-section h2 {
+        font-size: 1.125rem;
+    }
+
+    .head-text {
+        font-size: 0.75rem;
+    }
+
+    .bullet-list {
+        padding-top: 20px;
+    }
+
+    .list .subtext {
+        font-size: 0.688rem;
+        line-height: 14px;
+        font-weight: 400;
+    }
+
+    .bullet-list li::before {
+        top: 40%;
+    }
+
+    .bullet-list li::before {
+        width: 14.17px;
+        height: 14.17px;
+    }
+
+    .head-text {
+        margin-top: 10px;
+    }
+    .select-wrapper::after{
+        font-size: 12px;
+    }
+
+    .right-section {
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}

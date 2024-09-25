@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Hiring Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="content">
+            <div class="left-section">
+                <h2>Lorem ipsum dolor sit amet, consectetur </h2>
+                <ul class="bullet-list">
+                    <li class="list">
+                        <span class="head-text">Lorem ipsum dolor sit amet,</span>
+                        <span class="subtext">You can use an Emoji for the circular bullet icon.</span>
+                    </li>
+                    <li class="list">
+                        <span class="head-text">Lorem ipsum dolor sit amet,</span>
+                        <span class="subtext">Lorem ipsum dolor sit amet consectetur adipiscing elit dolor.</span>
+                    </li>
+                    <li class="list">
+                        <span class="head-text">Lorem ipsum dolor sit amet,</span>
+                        <span class="subtext">Lorem ipsum dolor sit amet consectetur adipiscing elit dolor.</span>
+                    </li>
+                    <li class="list">
+                        <span class="head-text">Lorem ipsum dolor sit amet,</span>
+                        <span class="subtext">Lorem ipsum dolor sit amet consectetur adipiscing elit dolor.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-section">
+                <div class="form-container">
+                    <form class="demo-form" id="demoForm">
+                        <h1>Lorem ipsum dolor</h1>
+
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" placeholder="Enter your email">
+                            <span class="error" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="demo-date">Preferred Demo Date*</label>
+                            <div class="date-selector">
+                                <input type="number" id="date" placeholder="Date" min="1" max="31">
+                                <div class="select-wrapper">
+                                    <select id="month">
+                                        <option value="" disabled selected>Month</option>
+                                        <option value="1">January</option>
+                                        <option value="2">February</option>
+                                        <option value="3">March</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrapper">
+                                    <select id="year">
+                                        <option value="" disabled selected>Year</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <span class="error" id="dateError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="department">Your Department</label>
+                            <div class="select-wrapper">
+                                <select id="department">
+                                    <option value="" disabled selected>Choose from the list</option>
+                                    <option value="sales">Sales</option>
+                                    <option value="marketing">Marketing</option>
+                                </select>
+                            </div>
+                            <span class="error" id="departmentError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="product">Which product would you like to take demo for?</label>
+                            <textarea id="product" placeholder="Tell us more about your requirements..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>How did you hear about us?</label>
+                            <div class="radio-group">
+                                <div class="rd">
+                                    <input type="radio" id="social-media" name="referral" value="social-media" checked>
+                                    <label for="social-media">Social Media</label>
+                                </div>
+                                <div class="rd">
+                                    <input type="radio" id="google-ads" name="referral" value="google-ads">
+                                    <label for="google-ads">Google Ads</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit">Request a Demo</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bottom-section">
+        <h2 class="moble-hide">Lorem ipsum dolor sit amet</h2>
+        <h2 class="desktop-hide">Lorem ipsum dolor sit amet, consectetur </h2>
+        <div class="b-t-d-container">
+            <div class="card-container">
+                <div class="card">
+                    <img src="./Assets/imgbackground.png" alt="Default Image">
+                    <div class="overlay"></div>
+                    <div class="text">
+                        <h3>Default State</h3>
+                        <p>This is default statue of the card, use an image as img tag and add gradient overlay and text
+                            over it.</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="./Assets/imgbackground.png" alt="Default Image">
+                    <div class="overlay"></div>
+                    <div class="text">
+                        <h3 class="hover">Hover State</h3>
+                        <p>This is the hover state of the first card; both cards should appear like this when the user
+                            hovers over them.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
