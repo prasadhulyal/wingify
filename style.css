@@ -401,9 +401,9 @@ select {
         padding: 40px;
     }
 
-    .card img {
+    /* .card img {
         object-fit: fill;
-    }
+    } */
 
     .card {
         width: 85%;
