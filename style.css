@@ -516,7 +516,9 @@ select {
         top: 50%;
         right: 8px;
     }
-
+    #product{
+        height: 51px;
+    }
     .right-section {
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
