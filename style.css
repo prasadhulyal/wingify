@@ -365,26 +365,36 @@ select {
 
     .b-t-d-container .card-container {
         margin-top: 0;
+        margin-bottom: 0;
     }
 
     .desktop-hide {
         display: block;
     }
 
-    /* input::placeholder,
+    input::placeholder,
     textarea::placeholder {
         font-size: 0.625rem;
-    } */
+    }
 
     .b-t-d-container {
         margin-top: 40px;
     }
-    .select-wrapper::after{
+
+    .error {
+        font-size: 0.625rem;
+    }
+    .demo-form input, .demo-form select, .demo-form textarea{
+        height: 35px;
+    }
+
+    .select-wrapper::after {
         width: 8.63px;
         height: 6.78px;
     }
+
     .demo-form button {
-        font-size: 1rem;
+        font-size: 0.693rem;
     }
 
     .form-container {
@@ -424,7 +434,9 @@ select {
         margin-bottom: 50px;
 
     }
-
+    .demo-form button{
+        height: 38px;
+    }
     .moble-hide {
         display: none;
     }
@@ -440,12 +452,20 @@ select {
     }
 
     .bottom-section h2 {
-        font-size: 1.579rem;
+        font-size: 1.079rem;
         padding: 0 0 0 7%;
     }
 
     .content .left-section h2 {
         font-size: 1.125rem;
+    }
+
+    .demo-form select {
+        font-size: 0.625rem;
+    }
+
+    .radio-group input[type="radio"] {
+        width: 12px;
     }
 
     .head-text {
@@ -456,10 +476,20 @@ select {
         padding-top: 20px;
     }
 
+    .form-group label {
+        font-size: 0.578rem;
+        color: #000;
+        font-weight: 500;
+    }
+
     .list .subtext {
         font-size: 0.688rem;
         line-height: 14px;
         font-weight: 400;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
     }
 
     .bullet-list li::before {
@@ -474,8 +504,13 @@ select {
     .head-text {
         margin-top: 10px;
     }
-    .select-wrapper::after{
-        font-size: 12px;
+
+    .select-wrapper::after {
+        font-size: 11px;
+        width: unset;
+        height: unset;
+        top: 50%;
+        right: 8px;
     }
 
     .right-section {
