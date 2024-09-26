@@ -48,8 +48,14 @@ document.querySelector('.demo-form').addEventListener('submit', function (event)
 // Show error message
 function showError(id, message) {
     const errorElement = document.getElementById(id);
+    const formGroup = errorElement.closest('.form-group'); // Get parent .form-group
+    
     errorElement.style.display = 'block';
     errorElement.textContent = message;
+
+    if (formGroup) {
+        formGroup.classList.add('error-margin'); // Add margin class when error shows
+    }
 }
 
 // Clear all error messages
@@ -57,6 +63,11 @@ function clearErrors() {
     const errors = document.querySelectorAll('.error');
     errors.forEach(function (error) {
         error.style.display = 'none';
+        const formGroup = error.closest('.form-group');
+        
+        if (formGroup) {
+            formGroup.classList.remove('error-margin'); // Remove margin class when error is cleared
+        }
     });
 
     // Remove error border class from all inputs
