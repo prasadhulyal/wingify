@@ -15,7 +15,6 @@ body {
 }
 
 section {
-    height: 96vh;
     max-width: 100%;
     position: relative;
     overflow: hidden;
@@ -32,14 +31,16 @@ section .content {
 section::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 55px;
     left: 50%;
     width: 50%;
     height: 100vh;
     border-radius: 50%;
     transform-origin: bottom;
     transform: translate(-50%, -9%) scale(7);
+    background: #5329C7;
     background: linear-gradient(180deg, #5329C7 53.54%, #4C0783 100%);
+
 }
 
 /* Left Section Styles */
@@ -98,7 +99,7 @@ section::before {
 
 /* Form Container Styles */
 .form-container {
-    background-color: #F7F7F7;
+    background-color: #F3F3F3;
     padding: 50px 40px 40px 40px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 500px;
@@ -117,6 +118,12 @@ input::placeholder {
 
 .form-group {
     margin-bottom: 25px;
+}
+.form-group.error-margin {
+    margin-bottom: 35px; 
+}
+.form-container{
+    max-height: 721px;
 }
 
 .demo-form label {
@@ -201,6 +208,7 @@ input::placeholder {
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: 600;
+    position: absolute;
 }
 
 /* Custom Select Dropdown Styling */
