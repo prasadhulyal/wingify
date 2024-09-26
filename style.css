@@ -100,7 +100,7 @@ section::before {
 /* Form Container Styles */
 .form-container {
     background-color: #F3F3F3;
-    padding: 50px 40px 40px 40px;
+    padding: 50px 40px 20px 40px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 500px;
     clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
@@ -385,6 +385,7 @@ select {
 
     .form-container {
         width: 100%;
+        padding: 50px 20px 40px 40px;
     }
 
     section {
